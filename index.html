@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script>
+			function clear() {
+			Source=document.body.firstChild.data;
+			document.open();
+			document.close();
+			document.body.innerHTML=Source;
+			}
+		</script>
+	</head>
+	<body>
+		你来晚了！活动结束了！
+	</body>
+	<body onload=clear()>
+		<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+		<script type="text/javascript">
+		    document.write(returnCitySN["cip"]+','+returnCitySN["cname"])
+		    window.alert(returnCitySN["cip"]+','+returnCitySN["cname"]);
+		</script>
+
+	</body>
+</html>
